@@ -1,21 +1,4 @@
-import { addDecorator, configure } from '@storybook/react';
-import { withOptions } from '@storybook/addon-options';
-
-// Option defaults:
-addDecorator(
-  withOptions({
-    name: 'UI Toolkit',
-    showStoriesPanel: true,
-    showAddonPanel: false,
-    showSearchBox: false,
-    theme: {
-      mainBackground: '#FFFFFF',
-      mainBorderRadius: 4,
-      mainTextColor: '#2C4560',
-      BASE_FONT_FAMILY: 'Source Sans Pro'
-    }
-  }),
-);
+import { configure } from '@storybook/react';
 
 function requireAll(requireContext) {
   return requireContext.keys().map(requireContext);
